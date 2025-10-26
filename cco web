@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Code Sakura</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="sakura"></div>
+
+  <div class="container">
+    <h1 class="title">Code Sakura 🌸</h1>
+    <p class="subtitle">Retro Punk Devs Unite 💻✨</p>
+
+    <div class="terminal">
+      <p>> Start coding like it's 1999...</p>
+      <p class="blink">_</p>
+    </div>
+
+    <button class="btn">Enter the Console</button>
+  </div>
+
+  <script src="sakura.js"></script>
+</body>
+</html>
