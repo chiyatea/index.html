@@ -1,198 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Golden Spoon</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #0f0f0f;
-      color: #f5f5f5;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #1a1a1a;
-      color: #d4af37;
-      text-align: center;
-      padding: 20px;
-      border-bottom: 2px solid #d4af37;
-    }
-
-    #header-img {
-      width: 120px;
-      border-radius: 50%;
-      border: 2px solid #d4af37;
-    }
-
-    nav {
-      margin-top: 10px;
-    }
-
-    nav a {
-      color: #f5f5f5;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: bold;
-    }
-
-    main {
-      max-width: 800px;
-      margin: 30px auto;
-      padding: 0 15px;
-    }
-
-    section {
-      margin-bottom: 40px;
-    }
-
-    h2 {
-      color: #d4af37;
-      border-bottom: 1px solid #d4af37;
-      padding-bottom: 5px;
-    }
-
-    article {
-      background-color: #1a1a1a;
-      border: 1px solid #333;
-      padding: 15px;
-      border-radius: 8px;
-      margin-bottom: 20px;
-    }
-
-    article img {
-      width: 100%;
-      max-width: 250px;
-      border-radius: 5px;
-      display: block;
-      margin-bottom: 10px;
-      border: 1px solid #d4af37;
-    }
-
-    article h3 {
-      color: #d4af37;
-      margin-bottom: 5px;
-    }
-
-    form {
-      background-color: #1a1a1a;
-      border: 1px solid #333;
-      padding: 20px;
-      border-radius: 8px;
-    }
-
-    label {
-      display: block;
-      margin-top: 10px;
-    }
-
-    input[type="number"],
-    textarea {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-      border-radius: 4px;
-      border: 1px solid #444;
-      background-color: #0f0f0f;
-      color: #f5f5f5;
-    }
-
-    input[type="checkbox"],
-    input[type="radio"] {
-      margin-right: 8px;
-      accent-color: #d4af37;
-    }
-
-    input[type="submit"] {
-      margin-top: 15px;
-      padding: 10px 20px;
-      background-color: #d4af37;
-      color: #000;
-      border: none;
-      border-radius: 4px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    footer {
-      background-color: #1a1a1a;
-      text-align: center;
-      color: #d4af37;
-      padding: 15px;
-      border-top: 2px solid #d4af37;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <img id="header-img" src="https://cdn.pixabay.com/photo/2016/11/29/06/18/coffee-1869820_1280.jpg" alt="The Golden Spoon Logo">
-    <h1>The Golden Spoon</h1>
-    <nav>
-      <a href="#menu">Menu</a>
-      <a href="#order-form">Order Form</a>
-    </nav>
-  </header>
-
-  <main>
-    <section id="menu">
-      <h2>Menu</h2>
-
-      <article>
-        <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/salad-1238256_960_720.jpg" alt="Golden Garden Salad">
-        <h3>Golden Garden Salad</h3>
-        <p>Fresh greens with roasted almonds and honey dressing. <em>$10.99</em></p>
-      </article>
-
-      <article>
-        <img src="https://cdn.pixabay.com/photo/2017/01/09/15/34/pasta-1965051_960_720.jpg" alt="Truffle Moon Pasta">
-        <h3>Truffle Moon Pasta</h3>
-        <p>Hand-tossed pasta in creamy truffle sauce with parmesan. <em>$14.49</em></p>
-      </article>
-
-      <article>
-        <img src="https://cdn.pixabay.com/photo/2014/10/23/18/05/burger-500054_960_720.jpg" alt="Eclipse Burger">
-        <h3>Eclipse Burger</h3>
-        <p>Charcoal bun with melted cheese and caramelized onions. <em>$15.99</em></p>
-      </article>
-    </section>
-
-    <section id="order-form">
-      <h2>Place Your Order</h2>
-
-      <form>
-        <label for="salad">Golden Garden Salad (Qty):</label>
-        <input type="number" id="salad" name="salad" min="0" value="0">
-
-        <label for="pasta">Truffle Moon Pasta (Qty):</label>
-        <input type="number" id="pasta" name="pasta" min="0" value="0">
-
-        <label for="burger">Eclipse Burger (Qty):</label>
-        <input type="number" id="burger" name="burger" min="0" value="0">
-
-        <p><strong>Sides:</strong></p>
-        <label><input type="checkbox" name="side" value="fries"> Fries</label>
-        <label><input type="checkbox" name="side" value="salad"> Small Salad</label>
-        <label><input type="checkbox" name="side" value="soup"> Soup</label>
-
-        <p><strong>Drink:</strong></p>
-        <label><input type="radio" name="drink" value="water" required> Water</label>
-        <label><input type="radio" name="drink" value="tea"> Iced Tea</label>
-        <label><input type="radio" name="drink" value="coffee"> Coffee</label>
-
-        <label for="requests">Special Requests:</label>
-        <textarea id="requests" name="requests" rows="4" placeholder="Any special instructions?"></textarea>
-
-        <input type="submit" value="Go To Checkout">
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>Made with love by <strong>codedex_student</strong></p>
-  </footer>
-
-</body>
-</html>
+<html>
+    <head>
+    <title>form</title>
+    </head>
+    <body>
+        <form action="/submit" methos="post">
+            <label for password>password:</label>
+            <input type="password" id="password" name="password" required><br></br>
+            <label for="date of birth">date of birth:</label>
+            <input type="date" id="date of birth" name="date of birth">required><br></br>
+            <label for="First Name">First Name:</label>
+            <input type="text" id="First Name" name="First Name" required><br></br>
+            <label for ="Last Name">Last Name:</label>
+            <input type="text" id="Last Name" name="Last Name" required><br></br>
+            <label for ="Email">Email:</label> 
+            <input type="email" id="Email" name="Email" required><br></br>
+            <label for ="phone">phone:</label>
+            <input type="number" id="phone" name="phone" required><br></br>
+            <label for ="gender">gender:</label><br></br>
+            <input type="radio" id="gender"  >male
+            <input type="radio" id="gender" >female
+            <label for="submit" id="submit" name="submit" required><br></br>
+            <input type="submit" value="Submit">
+            <label for="Remember Me" id="Remember Me" name="Remember Me" required><br></br>
+            <input type="checkbox" id="Remember Me" >Remember Me
+        </form>
+    </body>
+    </html>
