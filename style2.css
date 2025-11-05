@@ -1,0 +1,25 @@
+.header{
+ color:blue;
+    padding: 40px;
+}
+   
+
+#paragraph{
+    color: red;
+    font-size: 1.5rem;
+}
+#unique-paragraph{
+    color:aquamarine;
+    font-size: larger;
+}
+#container{
+    color:brown;
+}
+#highight{
+color: yellow;
+    font-weight: bold;
+}
+#inline-style{
+    color:blue;
+    font-style: italic; 
+}
